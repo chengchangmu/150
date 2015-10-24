@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px150"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px20"
+            android:layout_marginTop="@dimen/px20"
+            android:layout_weight="4"
+            android:padding="@dimen/px10" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/left" />
+
+            <com.scsy150.util.view.HorizontalListView
+                android:id="@+id/hl_listview"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/px100"
+                android:layout_marginLeft="@dimen/px16"
+                android:layout_marginRight="@dimen/px16"
+                android:layout_weight="1" >
+            </com.scsy150.util.view.HorizontalListView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/right" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_nowDate"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px50"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/px50"
+            android:layout_weight="1"
+            android:background="@drawable/shape_or_bt"
+            android:text="@string/now_date"
+            android:textColor="@color/white_font" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <GridView
+            android:id="@+id/gv_date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/px25"
+            android:horizontalSpacing="@dimen/px10"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/px10" >
+        </GridView>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/px38"
+            android:layout_marginLeft="@dimen/px20"
+            android:layout_marginRight="@dimen/px20"
+            android:layout_marginTop="@dimen/px50"
+            android:visibility="invisible" >
+        </android.support.v4.view.ViewPager>
+    </FrameLayout>
+
+</LinearLayout>

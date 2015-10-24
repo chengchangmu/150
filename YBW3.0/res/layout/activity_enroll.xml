@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px10"
+                android:background="@color/layout_grey3" />
+
+            <TextView
+                style="@style/enroll_main_style"
+                android:text="@string/basic_information" />
+
+            <View
+                style="@style/layout_border_vertical"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/px20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px20" >
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        style="@style/enroll_second_style"
+                        android:text="@string/name" />
+
+                    <TextView
+                        android:id="@+id/tv_username"
+                        style="@style/enroll_third_style"
+                        android:text="冬瓜" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px20"
+                    android:layout_marginTop="@dimen/px20" >
+
+                    <TextView
+                        android:id="@+id/tv_gender"
+                        style="@style/enroll_second_style"
+                        android:text="@string/gender" />
+
+                    <TextView
+                        android:id="@+id/tv_user_sex"
+                        style="@style/enroll_third_style"
+                        android:text="美女" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px20"
+                    android:layout_marginTop="@dimen/px20" >
+
+                    <TextView
+                        android:id="@+id/tv_phoneNum"
+                        style="@style/enroll_second_style"
+                        android:layout_marginBottom="@dimen/px30"
+                        android:text="@string/cell_phone_number" />
+
+                    <TextView
+                        android:id="@+id/tv_user_phone"
+                        style="@style/enroll_third_style"
+                        android:text="1356665555" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px6"
+                android:layout_marginTop="@dimen/px20"
+                android:background="@color/layout_grey3" />
+
+            <TextView
+                style="@style/enroll_main_style"
+                android:text="@string/order_information" />
+
+            <View
+                style="@style/layout_border_vertical"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/px20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px20"
+                    android:layout_marginTop="@dimen/px20" >
+
+                    <TextView
+                        android:id="@+id/tv_activityName"
+                        style="@style/enroll_second_style"
+                        android:text="@string/name_of_activity" />
+
+                    <TextView
+                        android:id="@+id/tv_activity_title"
+                        style="@style/enroll_third_style"
+                        android:text="戶外瑜伽" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px20"
+                    android:layout_marginTop="@dimen/px20" >
+
+                    <TextView
+                        android:id="@+id/tv_activityTime"
+                        style="@style/enroll_second_style"
+                        android:text="@string/activetime" />
+
+                    <TextView
+                        android:id="@+id/tv_activity_date"
+                        style="@style/enroll_third_style"
+                        android:text="2015-08-26" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px20"
+                    android:layout_marginTop="@dimen/px20" >
+
+                    <TextView
+                        android:id="@+id/tv_activityPlace"
+                        style="@style/enroll_second_style"
+                        android:text="@string/meet_location" />
+
+                    <TextView
+                        android:id="@+id/tv_activity_place"
+                        style="@style/enroll_third_style"
+                        android:text="KTV" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px20"
+                    android:layout_marginTop="@dimen/px20" >
+
+                    <TextView
+                        android:id="@+id/tv_activityCost"
+                        style="@style/enroll_second_style"
+                        android:text="@string/meet_cost" />
+
+                    <TextView
+                        android:id="@+id/tv_enroll_cost"
+                        style="@style/enroll_third_style"
+                        android:drawableLeft="@null"
+                        android:drawablePadding="@dimen/px20"
+                        android:text="@null" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px6"
+                android:layout_marginTop="@dimen/px20"
+                android:background="@color/layout_grey3" />
+
+            <TextView
+                style="@style/enroll_main_style"
+                android:text="@string/PaymentInformation" />
+
+            <View
+                style="@style/layout_border_vertical"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/px20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px20"
+                android:layout_marginTop="@dimen/px20" >
+
+                <TextView
+                    android:text="@string/discountcoupon"
+                    style="@style/enroll_second_style"/>
+
+                <TextView
+                    android:id="@+id/tv_Coupon"
+                    android:text="20元优惠券"
+                    style="@style/enroll_third_style"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px30"
+                    android:layout_marginLeft="@dimen/px10"
+                    android:src="@drawable/back" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px40" >
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5" />
+
+                <TextView
+                    android:text="@string/cashre_serve"
+                    style="@style/enroll_third_style"
+                    android:layout_marginLeft="@null"
+                    android:layout_marginStart="@null"
+                    android:layout_marginTop="@null"/>
+
+                <TextView
+                    style="@style/enroll_third_style"
+                    android:layout_marginLeft="@null"
+                    android:layout_marginStart="@null"
+                    android:layout_marginTop="@null"
+                    android:text="(" />
+
+                <TextView
+                    android:id="@+id/tv_balance"
+                    style="@style/enroll_third_style"
+                    android:text="100"
+                    android:layout_marginLeft="@null"
+                    android:layout_marginTop="@null"/>
+
+                <TextView
+                    android:text="@string/yuan"
+                    style="@style/enroll_third_style" 
+                    android:layout_marginLeft="@null"
+                    android:layout_marginTop="@null"/>
+                <TextView
+                    android:text=")"
+                    style="@style/enroll_third_style"
+                    android:layout_marginLeft="@null"
+                    android:layout_marginTop="@null" />
+
+                <TextView
+                    android:text="@string/currentuse"
+                    style="@style/enroll_second_style"
+                    android:layout_marginLeft="@dimen/px40"
+                    android:layout_marginTop="@null"/>
+
+                <EditText
+                    android:id="@+id/ed_yuan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/px34"
+                    android:text="@string/yuan" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px20"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:text="@string/otherway_stopay"
+                    style="@style/enroll_third_style"
+                    android:layout_marginLeft="@null"/>
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px10"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="@string/alipay" >
+
+                    <RadioButton
+                        style="@style/enroll_third_style"
+                        android:text="@string/alipay" />
+
+                    <RadioButton
+                        style="@style/enroll_third_style"
+                        android:text="@string/weipay" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px30" >
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5" />
+
+                <TextView
+                    android:text="@string/agree"
+                    style="@style/enroll_second_style" 
+                    android:layout_marginLeft="@null"
+                    android:layout_marginStart="@null"
+                    android:layout_marginTop="@null"/>
+
+                <TextView
+                    android:textColor="@color/theme_color"
+                    android:text="@string/with_hold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_34px" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/layout_grey_bg"
+        android:paddingBottom="@dimen/px40"
+        android:paddingTop="@dimen/px40" >
+
+        <TextView
+            android:id="@+id/tv_commit_enroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/px10"
+            android:layout_marginRight="@dimen/px10"
+            android:background="@drawable/commit_enroll"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:paddingBottom="@dimen/px10"
+            android:paddingTop="@dimen/px10"
+            android:text="@string/submit"
+            android:textColor="@color/white_font"
+            android:textSize="@dimen/font_34px" />
+    </FrameLayout>
+
+</LinearLayout>

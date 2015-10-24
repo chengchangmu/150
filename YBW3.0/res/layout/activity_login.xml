@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_grey_bg_color"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/top_space"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px20" >
+    </View>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/common_line" />
+
+    <LinearLayout
+        android:id="@+id/itemGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_item_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px100" >
+
+            <TextView
+                android:id="@+id/phoneNumberDes"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="@dimen/px30"
+                android:paddingRight="@dimen/px30"
+                android:text="@string/phone_number"
+                android:textSize="@dimen/font_32px" >
+            </TextView>
+
+            <com.scsy150.widget.EditTextDel
+                android:id="@+id/phoneNumberInput"
+                style="@style/common_edit_view"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/px25"
+                android:layout_weight="1"
+                android:hint="@string/login_input_phone_number"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/px30"
+            android:background="@color/common_line" />
+
+        <LinearLayout
+            android:id="@+id/pwLine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px100" >
+
+            <TextView
+                android:id="@+id/pw"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="@dimen/px30"
+                android:paddingRight="@dimen/px30"
+                android:text="@string/password_with_space"
+                android:textSize="@dimen/font_32px" >
+            </TextView>
+
+            <com.scsy150.widget.EditTextDel
+                android:id="@+id/pwInput"
+                style="@style/common_edit_view"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/px25"
+                android:layout_weight="1"
+                android:hint="@string/login_input_pw"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_login"
+        style="@style/common_red_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80"
+        android:layout_marginBottom="@dimen/px20"
+        android:layout_marginLeft="@dimen/px30"
+        android:layout_marginRight="@dimen/px30"
+        android:layout_marginTop="@dimen/px20"
+        android:text="@string/login" >
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px30"
+        android:layout_marginRight="@dimen/px30" >
+
+        <TextView
+            android:id="@+id/forget_pw"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="@string/login_forget_password"
+            android:textColor="@color/common_bold_des_text"
+            android:textSize="@dimen/font_28px" />
+        <TextView
+            android:id="@+id/reg_acc"
+            android:layout_alignParentEnd="true" 
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="@string/reg_acc"
+            android:textColor="@color/common_bold_des_text"
+            android:textSize="@dimen/font_28px" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/bottom_space"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+    </View>
+
+</LinearLayout>

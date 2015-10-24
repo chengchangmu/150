@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+   <!--  <RelativeLayout
+        android:background="@color/theme_color"
+        android:padding="@dimen/px20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/left_view"
+            android:layout_width="@dimen/px72"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/back_selector"
+            android:visibility="invisible" />
+
+        <RadioGroup
+            android:id="@+id/rg_choice"
+            android:layout_width="@dimen/px360"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/px1"
+            android:visibility="@null" >
+
+            <RadioButton
+                android:id="@+id/date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/order_status_bar_button_left_bg"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:paddingBottom="@dimen/px4"
+                android:paddingTop="@dimen/px4"
+                android:text="@string/appointment"
+                android:textColor="@color/order_status_bar_button"
+                android:textSize="14sp" />
+
+            <RadioButton
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_hot"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="@dimen/px4"
+                android:paddingTop="@dimen/px4"
+                android:text="@string/present"
+                android:textColor="@color/order_status_bar_button"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/now_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/order_status_bar_button_right_bg"
+                android:button="@null"
+                android:checked="false"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingBottom="@dimen/px4"
+                android:paddingTop="@dimen/px4"
+                android:text="@string/present"
+                android:textColor="@color/order_status_bar_button"
+                android:textSize="14sp" />
+        </RadioGroup>
+    </RelativeLayout> -->
+
+    <FrameLayout
+        android:id="@+id/fr_date_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+</LinearLayout>

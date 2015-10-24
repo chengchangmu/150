@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="selects_pic_words">
+        <item>相册选取</item>
+        <item>相机拍摄</item>
+    </string-array>
+    
+    <string-array name="selects_pic_words_l">
+        <item>预览</item>
+        <item>相册选取</item>
+        <item>相机拍摄</item>
+    </string-array>
+    
+    <string-array name="selects_pic_words_dl">
+        <item>预览</item>
+        <item>相册选取</item>
+        <item>相机拍摄</item>
+        <item>删除</item>
+    </string-array>
+    
+    <string-array name="selects_pic_good_commitment_words">
+        <item>相册选取</item>
+        <item>相机拍摄</item>
+        <item>从商家资质中选择</item>
+    </string-array>
+    <string-array name="user_select_names">
+        <item>捡银元</item>
+        <item>收红包</item>
+        <item>广告收藏</item>
+        <item>排行榜</item>
+        <item>商城</item>
+        <item>用户特权</item>
+        <item>寻找商家</item>
+    </string-array>
+</resources>

@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/sv_meet_detail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/tv_meet_detial_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px322"
+                    android:scaleType="fitXY"
+                    android:src="@null" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="@dimen/px20"
+                    android:layout_marginRight="@dimen/px20"
+                    android:layout_marginTop="@dimen/px10"
+                    android:orientation="horizontal"
+                    android:weightSum="5" >
+
+                    <TextView
+                        android:id="@+id/tv_handsome_meet"
+                        style="@style/tips"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/tag_handsome_transparent_shape"
+                        android:text="帅哥多"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_belle_meet"
+                        style="@style/tips"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="@dimen/px5"
+                        android:layout_marginStart="@dimen/px5"
+                        android:layout_weight="1"
+                        android:background="@drawable/tag_belle_transparent_shape"
+                        android:text="价格低"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_weekend_meet"
+                        style="@style/tips"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="@dimen/px5"
+                        android:layout_marginStart="@dimen/px5"
+                        android:layout_weight="1"
+                        android:background="@drawable/tag_weekend_transparent_shape"
+                        android:text="周末"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_slow_meet"
+                        style="@style/tips"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="@dimen/px5"
+                        android:layout_marginStart="@dimen/px5"
+                        android:layout_weight="1"
+                        android:background="@drawable/tag_slow_transparent_shape"
+                        android:text="手慢无"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_photo_meet"
+                        style="@style/tips"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="@dimen/px5"
+                        android:layout_marginStart="@dimen/px5"
+                        android:layout_weight="1"
+                        android:background="@drawable/tag_photo_transparent_shape"
+                        android:text="多图"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_activity_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px78"
+                android:background="@color/layout_grey_light"
+                android:gravity="bottom"
+                android:padding="@dimen/px20"
+                android:singleLine="true"
+                android:text="@null"
+                android:textColor="@color/font_grey_light3"
+                android:textSize="@dimen/font_28px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/px20" >
+
+                <TextView
+                    android:id="@+id/tv_date_meet"
+                    style="@style/font_grey_light2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/px16"
+                    android:layout_marginTop="@dimen/px10"
+                    android:drawableLeft="@drawable/clock"
+                    android:drawablePadding="@dimen/px20"
+                    android:text="@null" />
+
+                <View
+                    style="@style/layout_border_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/px10" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px10" >
+
+                    <TextView
+                        android:id="@+id/tv_place_meet"
+                        style="@style/font_grey_light2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/geofence"
+                        android:drawablePadding="@dimen/px20"
+                        android:drawableStart="@drawable/geofence"
+                        android:text="@null" />
+
+                    <ImageView
+                        android:id="@+id/iv_map"
+                        android:layout_width="@dimen/px60"
+                        android:layout_height="@dimen/px60"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="@dimen/px10"
+                        android:layout_marginRight="@dimen/px10"
+                        android:src="@drawable/location" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/layout_border_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/px10" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px10"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_total"
+                        style="@style/font_grey_light2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/contact"
+                        android:drawablePadding="@dimen/px20"
+                        android:drawableStart="@drawable/contact"
+                        android:text="@string/registration_number" />
+
+                    <TextView
+                        android:id="@+id/tv_female_number"
+                        style="@style/font_grey_light2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px32"
+                        android:drawableLeft="@drawable/xbnv"
+                        android:drawablePadding="@dimen/px6"
+                        android:text="@null" />
+
+                    <TextView
+                        android:id="@+id/tv_male_number"
+                        style="@style/font_grey_light2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px20"
+                        android:drawableLeft="@drawable/xbn"
+                        android:drawablePadding="@dimen/px6"
+                        android:text="@null" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px158"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/px24"
+                    android:weightSum="7" >
+
+                    <com.scsy150.util.view.HorizontalListView
+                        android:id="@+id/hlv_enroll_member"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/px114"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/px20"
+                        android:layout_marginRight="@dimen/px20"
+                        android:layout_weight="6" >
+                    </com.scsy150.util.view.HorizontalListView>
+
+                    <ImageView
+                        android:id="@+id/iv_show_more_photos"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/px114"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:src="@drawable/more_photos" />
+                </LinearLayout>
+
+                <View
+                    style="@style/layout_border_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/px10" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/px10"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/font_grey_light2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/organizer" />
+
+                    <TextView
+                        android:id="@+id/tv_organizer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px20"
+                        android:text=""
+                        android:textColor="@color/blue_light"
+                        android:textSize="@dimen/font_32px" />
+
+                    <TextView
+                        style="@style/font_grey_light2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px10"
+                        android:layout_marginStart="@dimen/px10"
+                        android:text="@string/release" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px10"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_cost"
+                        style="@style/font_grey_light2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/px10"
+                        android:text="@string/meet_cost" />
+
+                    <TextView
+                        android:id="@+id/tv_female_cost"
+                        style="@style/font_grey_light2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px32"
+                        android:drawableLeft="@drawable/xbnv"
+                        android:drawablePadding="@dimen/px6"
+                        android:text="@null" />
+
+                    <TextView
+                        android:id="@+id/tv_male_cost"
+                        style="@style/font_grey_light2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px20"
+                        android:drawableLeft="@drawable/xbn"
+                        android:drawablePadding="@dimen/px6"
+                        android:text="@null" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px10"
+                    android:layout_marginTop="@dimen/px20"
+                    android:background="@color/layout_grey_light" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px1"
+                    android:textColor="@color/clicked_grey_light" />
+
+                <TextView
+                    style="@style/font_grey_light3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px20"
+                    android:text="@string/meet_photo" />
+
+                <View
+                    style="@style/layout_border_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/px10"
+                    android:layout_marginStart="@dimen/px10"
+                    android:layout_marginTop="@dimen/px10" />
+
+                <com.scsy150.util.view.HorizontalListView
+                    android:id="@+id/hlv_meet_photos"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px114"
+                    android:layout_marginEnd="@dimen/px20"
+                    android:layout_marginRight="@dimen/px20"
+                    android:layout_marginTop="@dimen/px20" >
+                </com.scsy150.util.view.HorizontalListView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px10"
+                    android:layout_marginTop="@dimen/px20"
+                    android:background="@color/layout_grey_light" />
+
+                <TextView
+                    style="@style/font_grey_light3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px20"
+                    android:text="@string/meet_process" />
+
+                <View
+                    style="@style/layout_border_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/px10"
+                    android:layout_marginStart="@dimen/px10"
+                    android:layout_marginTop="@dimen/px10" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px20"
+                    android:weightSum="3"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            style="@style/step_style"
+                            android:text="@string/step_0" />
+
+                        <TextView
+                            style="@style/step_des_style"
+                            android:text="@string/step_0_des" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            style="@style/step_style"
+                            android:text="@string/step_1" />
+
+                        <TextView
+                            style="@style/step_des_style"
+                            android:text="@string/step_1_des" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            style="@style/step_style"
+                            android:text="@string/step_2" />
+
+                        <TextView
+                            style="@style/step_des_style"
+                            android:text="@string/step_2_des" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px20" 
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            style="@style/step_style"
+                            android:text="@string/step_3" />
+
+                        <TextView
+                            style="@style/step_des_style"
+                            android:text="@string/step_3_des" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            style="@style/step_style"
+                            android:text="@string/step_4" />
+
+                        <TextView
+                            style="@style/step_des_style"
+                            android:text="@string/step_4_des" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            style="@style/step_style"
+                            android:text="@string/step_5" />
+
+                        <TextView
+                            style="@style/step_des_style"
+                            android:text="@string/step_5_des" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px10"
+                    android:layout_marginTop="@dimen/px20"
+                    android:background="@color/layout_grey_light" />
+
+                <TextView
+                    style="@style/font_grey_light3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px20"
+                    android:text="@string/meet_details" />
+
+                <TextView
+                    android:id="@+id/tv_meet_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px20"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px100"
+                    android:layout_marginLeft="@dimen/px10"
+                    android:layout_marginStart="@dimen/px10"
+                    android:layout_marginTop="@dimen/px10" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/base_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px88"
+        android:layout_gravity="bottom"
+        android:background="@color/layout_grey_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_share_meet"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/common_btn_red_text"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/share"
+            android:textSize="@dimen/px32" 
+            android:visibility="gone"/>
+
+        <com.scsy150.widget.DrawableLeftCenterTextView
+            android:id="@+id/tv_enroll_meet"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/button_orange"
+            android:clickable="true"
+            android:drawableLeft="@drawable/enroll_meet"
+            android:drawableStart="@drawable/enroll_meet"
+            android:drawablePadding="@dimen/px4"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:text="@string/signup_immediately"
+            android:textSize="@dimen/px32" />
+    </LinearLayout>
+
+</LinearLayout>

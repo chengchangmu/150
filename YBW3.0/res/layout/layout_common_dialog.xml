@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/common_white_bg_corner"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/dialog_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/dialog_with_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px200"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/dialog_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px10"
+                android:layout_marginTop="@dimen/px40"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/common_big_title_text"
+                android:textSize="@dimen/font_36px" />
+
+            <ScrollView
+                android:id="@+id/msg_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/dialog_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/px40"
+                    android:layout_marginRight="@dimen/px40"
+                    android:gravity="center"
+                    android:textColor="@color/common_bold_des_text"
+                    android:textSize="@dimen/font_28px" />
+            </ScrollView>
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/msg_content_no_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/px200"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/dialog_msg_no_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/px40"
+                android:layout_marginRight="@dimen/px40"
+                android:gravity="center|center_vertical"
+                android:textColor="@color/common_bold_des_text"
+                android:textSize="@dimen/font_28px" />
+        </ScrollView>
+    </FrameLayout>
+
+    <com.scsy150.widget.EditTextDel
+        android:id="@+id/dialog_input_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px20"
+        android:background="@null"
+        android:drawableBottom="@drawable/line"
+        android:drawablePadding="@dimen/px20"
+        android:hint="@string/please_input"
+        android:paddingLeft="@dimen/px20"
+        android:paddingRight="@dimen/px20"
+        android:paddingTop="@dimen/px32"
+        android:singleLine="true"
+        android:textColor="@color/common_black_word"
+        android:textSize="@dimen/font_36px"
+        android:visibility="gone" />
+
+    <com.scsy150.widget.EditTextDel
+        android:id="@+id/dialog_input_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:drawableBottom="@drawable/line"
+        android:drawablePadding="@dimen/px20"
+        android:hint="@string/please_input"
+        android:paddingLeft="@dimen/px20"
+        android:paddingRight="@dimen/px20"
+        android:paddingTop="@dimen/px32"
+        android:singleLine="true"
+        android:textColor="@color/common_black_word"
+        android:textSize="@dimen/font_36px"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/dialog_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/px40"
+        android:layout_marginTop="@dimen/px20"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@null"
+        android:visibility="gone" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/dialog_btn_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/dialog_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/common_white_bottomleft_cornor_selector"
+            android:gravity="center"
+            android:padding="@dimen/px20"
+            android:text="@string/no"
+            android:textColor="@color/common_btn_red_text"
+            android:textSize="@dimen/font_36px"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/dialog_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/common_white_bottomright_cornor_selector"
+            android:gravity="center"
+            android:padding="@dimen/px20"
+            android:text="@string/yes"
+            android:textColor="@color/common_btn_red_text"
+            android:textSize="@dimen/font_36px"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/image_chooser_dialog_cancel"
+        style="@style/common_grey_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px78"
+        android:layout_margin="@dimen/px40"
+        android:text="@string/cancel"
+        android:visibility="gone" >
+    </TextView>
+
+</LinearLayout>

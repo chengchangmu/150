@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_grey_bg_color"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/top_space"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px20" >
+    </View>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/common_line" />
+
+    <LinearLayout
+        android:id="@+id/itemGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_item_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.scsy150.widget.EditTextDel
+                android:id="@+id/input"
+                style="@style/common_edit_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/px25"
+                android:layout_marginRight="@dimen/px15"
+                android:imeOptions="actionNext"
+                android:minHeight="@dimen/px100" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/common_line" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/input_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="@dimen/px20"
+        android:layout_marginLeft="@dimen/px30"
+        android:layout_marginRight="@dimen/px30"
+        android:layout_marginTop="@dimen/px20"
+        android:textColor="@color/item_desc_time"
+        android:gravity="right"
+        android:text="@string/input_num" />
+
+    <TextView
+        android:id="@+id/ok"
+        style="@style/common_red_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80"
+        android:layout_marginBottom="@dimen/px20"
+        android:layout_marginLeft="@dimen/px30"
+        android:layout_marginRight="@dimen/px30"
+        android:layout_marginTop="@dimen/px20"
+        android:text="@string/sure" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+    </View>
+
+</LinearLayout>

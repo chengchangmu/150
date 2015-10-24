@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_normal"
+    android:orientation="horizontal"
+    android:padding="@dimen/px20" >
+
+    <ImageView
+        android:id="@+id/iv_activityPhotos"
+        android:layout_width="@dimen/px240"
+        android:layout_height="@dimen/px180"
+        android:layout_marginEnd="@dimen/px10"
+        android:layout_marginRight="@dimen/px10"
+        android:scaleType="fitXY"
+        android:src="@drawable/ph" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px180"
+        android:weightSum="4"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_activity_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="七夕百人交友联谊party报名中，  紧紧相约一起嗨！"
+            android:textColor="@color/black_font"
+            android:textSize="@dimen/font_32px" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/px18" >
+
+            <TextView
+                android:id="@+id/tv_distance"
+                style="@style/loc_mem_dat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:drawableLeft="@drawable/geofence"
+                android:text="距离1km" />
+
+            <TextView
+                android:id="@+id/tv_number"
+                style="@style/loc_mem_dat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_distance"
+                android:layout_marginLeft="@dimen/px30"
+                android:drawableLeft="@drawable/contact"
+                android:text="100" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                style="@style/loc_mem_dat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/px10"
+                android:drawableLeft="@drawable/clock"
+                android:text="27/08" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="5"
+            android:layout_marginTop="@dimen/px12" >
+
+            <TextView
+                android:id="@+id/tv_handsome"
+                style="@style/tips"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/tag_handsome_shape"
+                android:visibility="gone"
+                android:text="帅哥多" />
+
+            <TextView
+                android:id="@+id/tv_belle"
+                style="@style/tips"
+                android:layout_width="0dp"
+                android:layout_marginLeft="@dimen/px5"
+                android:layout_marginStart="@dimen/px5"
+                android:layout_weight="1"
+                android:background="@drawable/tag_belle_shape"
+                android:visibility="gone"
+                android:text="价格低" />
+
+            <TextView
+                android:id="@+id/tv_weekend"
+                style="@style/tips"
+                android:layout_width="0dp"
+                android:layout_marginLeft="@dimen/px5"
+                android:layout_marginStart="@dimen/px5"
+                android:layout_weight="1"
+                android:background="@drawable/tag_weekend_shape"
+                android:visibility="gone"
+                android:text="周末" />
+
+            <TextView
+                android:id="@+id/tv_slow"
+                style="@style/tips"
+                android:layout_width="0dp"
+                android:layout_marginLeft="@dimen/px5"
+                android:layout_marginStart="@dimen/px5"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:background="@drawable/tag_slow_shape"
+                android:text="手慢无" />
+
+            <TextView
+                android:id="@+id/tv_photo"
+                style="@style/tips"
+                android:layout_width="0dp"
+                android:layout_marginLeft="@dimen/px5"
+                android:layout_marginStart="@dimen/px5"
+                android:layout_weight="1"
+                android:background="@drawable/tag_photo_shape"
+                android:visibility="gone"
+                android:text="多图" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

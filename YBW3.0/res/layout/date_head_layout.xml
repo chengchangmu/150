@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px200"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px20"
+                android:layout_marginTop="@dimen/px20"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bussin"
+                    android:textColor="@color/layout_grey3"
+                    android:textSize="@dimen/font_32px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px20"
+                    android:text="@string/date_fee"
+                    android:textColor="@color/layout_grey3"
+                    android:textSize="@dimen/font_32px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px20"
+                    android:text="@string/payment_proportion"
+                    android:textColor="@color/layout_grey3"
+                    android:textSize="@dimen/font_32px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px30"
+                    android:text="@string/date_time"
+                    android:textColor="@color/layout_grey3"
+                    android:textSize="@dimen/font_32px" />
+            </LinearLayout>
+
+            <!-- 右边部分 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px20"
+                android:layout_marginRight="@dimen/px20"
+                android:layout_marginTop="@dimen/px20"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_bName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_font"
+                        android:textSize="@dimen/font_32px" />
+
+                    <TextView
+                        android:id="@+id/tv_bs_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px20"
+                        android:text="@string/detailed"
+                        android:textColor="@color/btn_choose_gray_blue"
+                        android:textSize="@dimen/font_32px" />
+
+                    <TextView
+                        android:id="@+id/tv_chagePlace"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/change"
+                        android:textColor="@color/btn_choose_gray_blue"
+                        android:textSize="@dimen/font_32px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px20"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_scost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_32px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yuan"
+                        android:textSize="@dimen/font_32px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RadioGroup
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:layout_width="@dimen/px106"
+                            android:layout_height="@dimen/px64"
+                            android:background="@drawable/back_bt_selector"
+                            android:button="@null"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:text="50%"
+                            android:textColor="@color/bt_radio_white_gray" />
+
+                        <RadioButton
+                            android:layout_width="@dimen/px106"
+                            android:layout_height="@dimen/px64"
+                            android:background="@drawable/back_bt_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="60%"
+                            android:textColor="@color/bt_radio_white_gray" />
+
+                        <RadioButton
+                            android:layout_width="@dimen/px106"
+                            android:layout_height="@dimen/px64"
+                            android:background="@drawable/back_bt_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="70%"
+                            android:textColor="@color/bt_radio_white_gray" />
+
+                        <RadioButton
+                            android:layout_width="@dimen/px106"
+                            android:layout_height="@dimen/px64"
+                            android:background="@drawable/back_bt_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="80%"
+                            android:textColor="@color/bt_radio_white_gray" />
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="30"
+                            android:textColor="#ff6b0f"
+                            android:textSize="@dimen/font_32px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="@string/yuan" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px10"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_first_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/px46"
+                        android:gravity="center"
+                        android:text="@string/pl_chose"
+                        android:textColor="@color/btn_choose_gray_blue"
+                        android:textSize="@dimen/font_34px" />
+
+                    <TextView
+                        android:id="@+id/tv_two_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/px46"
+                        android:layout_marginLeft="@dimen/px20"
+                        android:gravity="center_vertical"
+                        android:text="@string/pl_chose"
+                        android:textColor="@color/btn_choose_gray_blue"
+                        android:textSize="@dimen/font_34px" />
+
+                    <TextView
+                        android:id="@+id/tv_three_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/px46"
+                        android:layout_marginLeft="@dimen/px20"
+                        android:gravity="center_vertical"
+                        android:text="@string/pl_chose"
+                        android:textColor="@color/btn_choose_gray_blue"
+                        android:textSize="@dimen/font_34px" />
+
+                    <TextView
+                        android:id="@+id/tv_four_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/px46"
+                        android:layout_marginLeft="@dimen/px20"
+                        android:gravity="center_vertical"
+                        android:text="@string/pl_chose"
+                        android:textColor="@color/btn_choose_gray_blue"
+                        android:textSize="@dimen/font_34px" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px20"
+                    android:text="@string/date_statement"
+                    android:textColor="#ff0000"
+                    android:textSize="@dimen/font_24px" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px20"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px20" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/state"
+                android:textColor="@color/layout_grey3"
+                android:textSize="@dimen/font_32px" />
+
+            <LinearLayout
+                android:id="@+id/ll_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/px40"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_date_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px110"
+                    android:text="@string/date_text"
+                    android:textColor="@color/black_font"
+                    android:textSize="@dimen/font_32px" />
+
+                <ImageView
+                    android:id="@+id/iv_dateText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px10"
+                    android:padding="@dimen/px10"
+                    android:src="@drawable/xljtjt" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px20"
+                android:layout_marginTop="@dimen/px20" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/payment_method"
+                    android:textColor="#727272"
+                    android:textSize="@dimen/font_34px" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="@dimen/px50" >
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+
+                            <RadioButton
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:button="@null"
+                                android:checked="true"
+                                android:drawableLeft="@drawable/circle_bt_select"
+                                android:drawablePadding="@dimen/px10"
+                                android:text="@string/alipay"
+                                android:textColor="@color/black_font" />
+
+                            <RadioButton
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:button="@null"
+                                android:drawableLeft="@drawable/circle_bt_select"
+                                android:drawablePadding="@dimen/px10"
+                                android:text="@string/wechat"
+                                android:textColor="@color/black_font" />
+
+                            <RadioButton
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:button="@null"
+                                android:drawableLeft="@drawable/circle_bt_select"
+                                android:drawablePadding="@dimen/px10"
+                                android:text="@string/credit_card"
+                                android:textColor="@color/black_font" />
+                        </RadioGroup>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px50"
+                android:layout_marginTop="@dimen/px20" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/payment_method"
+                    android:visibility="invisible" />
+
+                <CheckedTextView
+                    android:id="@+id/ct_yh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px48"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/check_selecter"
+                    android:drawablePadding="@dimen/px10"
+                    android:text="@string/coupon"
+                    android:textColor="@color/grey_deep_font" />
+
+                <TextView
+                    android:id="@+id/tv_userCoupons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px20"
+                    android:maxEms="5"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColor="@color/black_font" />
+
+                <ImageView
+                    android:id="@+id/iv_youhui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px10"
+                    android:padding="@dimen/px10"
+                    android:src="@drawable/xljtjt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px20"
+                android:layout_marginTop="@dimen/px20" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/payment_method"
+                    android:visibility="invisible" />
+
+                <CheckedTextView
+                    android:id="@+id/ck_cash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px80"
+                    android:drawableLeft="@drawable/check_selecter"
+                    android:drawablePadding="@dimen/px10"
+                    android:text="@string/cash"
+                    android:textColor="@color/black_font" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kuohao" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textColor="@color/black_font" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yuan"
+                    android:textColor="@color/black_font" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kuohaoL" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px20"
+                android:layout_marginTop="@dimen/px20" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/payment_method"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px70"
+                    android:text="@string/now_user" />
+
+                <EditText
+                    android:layout_width="@dimen/px100"
+                    android:layout_height="@dimen/px60"
+                    android:layout_marginTop="@dimen/px5"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:maxEms="5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yuan" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px88"
+                android:layout_margin="@dimen/px20"
+                android:layout_marginTop="@dimen/px20"
+                android:background="@color/theme_color"
+                android:text="@string/confirm"
+                android:textColor="@color/bt_back_white_gray"
+                android:textSize="@dimen/font_32px" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_kongbai"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#70000000"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

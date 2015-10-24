@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px150"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+      >
+
+        <TextView
+            android:layout_marginLeft="@dimen/px20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bs_name"
+            android:textSize="@dimen/font_40px" />
+
+        <TextView
+            android:id="@+id/tv_bs_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px20"
+            android:textColor="@color/black_font"
+            android:textSize="@dimen/font_40px" />
+    </LinearLayout>
+
+    <FrameLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <GridView
+            android:id="@+id/gv_now"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/px20"
+            android:layout_marginTop="@dimen/px30"
+            android:cacheColorHint="@android:color/transparent"
+            android:horizontalSpacing="@dimen/px10"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/px10" >
+        </GridView>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/now_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/px50"
+            android:layout_marginLeft="@dimen/px20"
+            android:layout_marginRight="@dimen/px20"
+            android:layout_marginBottom="@dimen/px38"
+            android:visibility="gone" >
+        </android.support.v4.view.ViewPager>
+    </FrameLayout>
+
+</LinearLayout>

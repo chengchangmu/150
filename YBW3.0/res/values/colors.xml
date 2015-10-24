@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 布局颜色 -->
+
+    <color name="order_nor">#ff6b0f</color>
+    <color name="btn_gray_normal">#c0c0c0</color>
+    <color name="error_item_color">#F6EBE6</color>
+    <color name="darkGreen">#006400</color>
+    <color name="bule">#0066CC</color>
+    <color name="white">#FFFFFF</color>
+    <color name="top_bar_normal_bg">#4ebcd3</color>
+    <color name="common_bg">#fcfcfc</color>
+    <color name="layout_grey_bg">#efeff4</color> <!-- 背景色 -->
+    <color name="layout_decor_bg">#605CA2</color> <!-- decorVie的背景色 -->
+    <color name="layout_white">#ffffff</color> <!-- 背景色 -->
+    <color name="layout_red_main">#f00500</color> <!-- 主色 -->
+    <color name="layout_grey1">#646464</color> <!-- 辅色1 -->
+    <color name="layout_grey2">#888888</color> <!-- 辅色2 -->
+    <color name="layout_grey3">#cccccc</color> <!-- 辅色3 -->
+    <color name="layout_grey4">#dcdcdc</color> <!-- 辅色4 -->
+    <color name="layout_grey5">#c5c5c5</color> <!-- 辅色5 -->
+    <color name="layout_black">#000000</color> <!-- 背景色 -->
+    <color name="grid_line">#c5c5c5</color>
+    <color name="layout_blue">#16D1E2</color>
+    <color name="wheel_timebtn_nor">#54a3fa</color>
+    <color name="wheel_timebtn_pre">#CCCCCC</color>
+    <color name="pink">#f9a0af</color>
+    <color name="green">#9ce6bb</color>
+    <color name="zise">#f8a0f9</color>
+    <color name="lanse">#82dcfa</color>
+
+    <!-- 字体颜色 -->
+    <color name="black_deep_font">#222222</color> <!-- 用于标准名称 -->
+    <color name="black_font">#555555</color> <!-- 用于由上往下弹出层操作字体颜色 -->
+    <color name="grey_deep_font">#646464</color> <!-- 用于首页主入口字体颜色 -->
+    <color name="grey_font">#888888</color> <!-- 用于首页底部tab字体颜色 -->
+    <color name="grey_light_font">#999999</color> <!-- 用于输入框提示语 状态标签 -->
+    <color name="red_font">#f00500</color> <!-- 用于警示语 商品价格 部分按钮 -->
+    <color name="white_font">#ffffff</color> <!-- 用于按钮和头部字体 -->
+    <color name="blue_link_font">#2882dc</color> <!-- 用于链接等 -->
+    <color name="blue_light">#16bac9</color> <!-- 底部按钮 -->
+    <color name="blue_light2">#ff12bac9</color> <!-- 底部按钮 -->
+
+    <color name="item_desc_time">#727272</color> <!-- 列表时间，描述 -->
+    <color name="item_title">#212121</color> <!-- 列表标题 -->
+
+
+    <!-- 点击颜色 -->
+    <color name="clicked_red">#c00400</color> <!-- 用于红色按钮hover -->
+    <color name="clicked_grey_light">#d7d7db</color> <!-- 用于浅灰按钮hover -->
+    <color name="clicked_white">#e5e5e5</color> <!-- 用于白色按钮hover -->
+
+
+    <!-- demo draft -->
+    <color name="common_grey">#f6f6f6</color> <!-- 背景色 -->
+    <color name="common_orange">#ffa054</color> <!-- 所有地方的橙色 -->
+    <color name="common_blue">#86dcf5</color> <!-- 蓝色背景和边框 -->
+    <color name="common_blue_press">#60d0f1</color>
+    <color name="common_deep_grey_word">#898989</color> <!-- 普通字体颜色 -->
+    <color name="common_divider_color">#dfdfdf</color> <!-- 分割线颜色 -->
+    <color name="common_press_color">#c5c5c5</color> <!-- 普通选项点中颜色 -->
+    <color name="common_orange_press">#fa8c36</color> <!-- 橙色按钮点击颜色 -->
+    <color name="common_white">#ffffff</color> <!-- 普通白色 -->
+
+	<color name="button_orange">#F86C14</color> <!-- 立即报名 -->
+
+    <!-- 联谊详情页 -->
+    <color name="common_btn_bg">#12bac9</color> <!-- 广告页指示点选中 -->
+    <color name="common_btn_grey">#e0e0e0</color> <!-- 广告页指示未选中 -->
+    <color name="font_black_light">#e0e0e0</color> <!-- 字体黑 -->
+    <color name="font_grey_light">#e5f0f0f0</color> <!-- 字体浅灰 -->
+    <color name="font_grey_light2">#727272</color> <!-- 字体浅灰 -->
+    <color name="font_grey_light3">#212121</color> <!-- 字体黑 -->
+    <color name="layout_grey_light">#e0e0e0</color> <!-- 字体黑 -->
+    <color name="layout_grey_light2">#b6b6b6</color> <!-- 背景浅灰 -->
+
+    <color name="common_black">#333333</color>
+    <color name="side_color">#eaeaea</color>
+
+    <!-- tmp -->
+    <color name="blue_normal">#22c9af</color>
+    <color name="white_normal">#ffffff</color>
+    <color name="pay_item_click">#f6f5f1</color>
+    <color name="white_pressed">#eeeeee</color>
+    <color name="border_color">#dddddd</color>
+    <color name="common_black_word">#333333</color>
+    <color name="blue_pressed">#159b86</color>
+    <color name="disable_color">#cccccc</color>
+    <color name="orage">#ff6b0c</color>
+
+    <!-- 页面背景色 -->
+    <color name="common_grey_bg_color">#ffefeff4</color>
+    <color name="common_white_bg_color">#ffffffff</color>
+    <color name="common_black_bg_color">#333333</color>
+    <color name="common_toast_bg_color">#e5555555</color>
+    <color name="common_notify_bg_color">#e5ffffff</color>
+    <!-- bar背景色 -->
+    <color name="common_bar_bg_color">#ffdedfe0</color>
+    <!-- 大标题字体颜色 -->
+    <color name="common_big_title_text">#ff222222</color>
+    <!-- 一般的item的背景色 -->
+    <color name="common_item_bg">#ffffffff</color>
+    <!-- 内容描述字体颜色 -->
+    <color name="common_big_des_text">#ff666666</color>
+    <color name="common_small_des_text">#ff999999</color>
+    <color name="common_bold_des_text">#ff222222</color>
+    <color name="common_tiny_des_text">#ffcccccc</color>
+    <color name="common_des_text">#ffb2b2b4</color>
+    <!-- 按钮字体颜色 -->
+    <color name="common_btn_red_text">#12BAC9</color>
+    <color name="common_btn_select">#f3feff</color>
+    <color name="common_btn_grey_text">#ff888888</color>
+    <color name="common_btn_black_text">#ff333333</color>
+    <color name="common_btn_white_text">#ffffffff</color>
+    <color name="common_btn_white_text_press">#88ffffff</color>
+    <color name="common_btn_red_text_press">#88f00500</color>
+    <color name="common_btn_black_text_press">#88333333</color>
+    <!-- 按钮背景颜色 -->
+    <color name="common_btn_white_bg">#ffefeff4</color>
+    <color name="common_btn_red_bg">#12BAC9</color>
+    <!-- 编辑框hint内容的字体颜色 -->
+    <color name="common_edit_hint_text">#ffcccccc</color>
+    <!-- 分割线线条颜色 -->
+    <color name="common_line">#e0e0e0</color>
+
+    <!-- 按钮背景点击时的颜色 -->
+    <color name="common_btn_red_bg_press">#12BAC9</color>
+    <color name="common_btn_white_bg_press">#ffd7d7db</color>
+    <color name="common_btn_grey_bg_press">#ffe5e5e5</color>
+    <color name="bg_list">#f5f5f5</color>
+    <!-- 通用透明色 -->
+    <color name="transparent">#00000000</color>
+    <color name="theme_color">#12bac9</color>
+
+</resources>

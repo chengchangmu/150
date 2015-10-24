@@ -1,0 +1,124 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/px10"
+    android:background="@color/layout_white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_user_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px10"
+            android:padding="@dimen/font_10px"
+            android:text="@string/user_info"
+            android:textColor="@color/black_deep_font"
+            android:textSize="@dimen/font_36px" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px10"
+            android:padding="@dimen/font_10px"
+            android:text="@string/user_name"
+            android:textColor="@color/black_deep_font"
+            android:textSize="@dimen/font_28px" />
+        
+        <TextView
+            android:id="@+id/tv_user_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px10"
+            android:padding="@dimen/font_10px"
+            android:text="@string/user_sex"
+            android:textColor="@color/black_deep_font"
+            android:textSize="@dimen/font_28px" />
+        
+        <TextView
+            android:id="@+id/tv_user_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px10"
+            android:padding="@dimen/font_10px"
+            android:text="@string/user_phone"
+            android:textColor="@color/black_deep_font"
+            android:textSize="@dimen/font_28px" />
+        
+        <TextView
+            android:id="@+id/tv_user_pay_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px10"
+            android:padding="@dimen/font_10px"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/user_pay_detail"
+            android:textColor="@color/black_deep_font"
+            android:textSize="@dimen/font_48px" />
+        
+        <TextView
+            android:id="@+id/tv_user_order_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px10"
+            android:padding="@dimen/font_10px"
+            android:text="@string/user_order_info"
+            android:textColor="@color/grey_font"
+            android:textSize="@dimen/font_28px" />
+        
+        <TextView
+            android:id="@+id/tv_user_alipay_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px10"
+            android:padding="@dimen/font_10px"
+            android:text="@string/user_alipay_account"
+            android:textColor="@color/grey_font"
+            android:textSize="@dimen/font_28px" />
+        
+        <TextView
+            android:id="@+id/tv_user_pay_way"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px10"
+            android:padding="@dimen/font_10px"
+            android:text="@string/user_pay_way"
+            android:textColor="@color/grey_font"
+            android:textSize="@dimen/font_28px" />
+        
+        <TextView
+            android:id="@+id/tv_user_need_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px10"
+            android:padding="@dimen/font_10px"
+            android:text="@string/user_need_pay"
+            android:textColor="@color/black_font"
+            android:textSize="@dimen/font_36px" />
+        
+
+    </LinearLayout>
+    
+        <TextView
+            android:id="@+id/tv_confirm_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/px10"
+            android:layout_marginLeft="@dimen/px10"
+            android:layout_marginRight="@dimen/px10"
+            android:background="@drawable/commit_enroll"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:paddingBottom="@dimen/px10"
+            android:paddingTop="@dimen/px10"
+            android:text="@string/confirm_order"
+            android:textColor="@color/white_font"
+            android:textSize="@dimen/font_32px" />
+
+</FrameLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="@dimen/px230"
+            android:layout_height="@dimen/px230">
+
+        <ImageView
+            android:id="@+id/iv_photo"
+           android:layout_width="@dimen/px230"
+            android:layout_height="@dimen/px230"
+            android:src="@drawable/head" />
+
+        <ImageView
+            android:id="@+id/iv_vdType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="@dimen/px20"
+            android:src="@drawable/sp_icon"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

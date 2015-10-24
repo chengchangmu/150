@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 水平分割线的style -->
+    <style name="layout_border_vertical">
+        <item name="android:background">@color/layout_grey3</item>
+        <item name="android:layout_height">@dimen/px1</item>
+    </style>
+
+    <!-- 垂直分割线的style -->
+    <style name="layout_border_horizontal">
+        <item name="android:background">@color/layout_grey3</item>
+        <item name="android:layout_width">@dimen/px1</item>
+    </style>
+
+    <!-- 类似于“提交”按钮的style -->
+    <style name="big_red_btn">
+        <item name="android:background">@drawable/big_red_btn_selector</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/px80</item>
+        <item name="android:textSize">@dimen/font_36px</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- (52px)checkbox的style -->
+    <style name="checkbox_52px">
+        <item name="android:background">@drawable/checkbox_selector</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_width">@dimen/px52</item>
+        <item name="android:layout_height">@dimen/px52</item>
+    </style>
+
+    <!-- 联谊详情 -->
+    <style name="font_grey_light1">
+        <item name="android:textColor">@color/font_grey_light2</item>
+        <item name="android:textSize">@dimen/font_34px</item>
+    </style>
+    <style name="font_grey_light2">
+        <item name="android:textColor">@color/font_grey_light2</item>
+        <item name="android:textSize">@dimen/font_28px</item>
+    </style>
+    <style name="font_grey_light3">
+        <item name="android:textColor">@color/font_grey_light3</item>
+        <item name="android:textSize">@dimen/font_28px</item>
+    </style>
+
+</resources>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_grey_bg_color"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/top_space"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px20" >
+    </View>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/common_line" />
+
+    <LinearLayout
+        android:id="@+id/itemGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_item_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px100" >
+
+            <TextView
+                android:id="@+id/phoneNumberDes"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="@dimen/px30"
+                android:paddingRight="@dimen/px30"
+                android:text="@string/phone_number"
+                android:textSize="@dimen/font_32px" >
+            </TextView>
+
+            <com.scsy150.widget.EditTextDel
+                android:id="@+id/phoneNumberInput"
+                style="@style/common_edit_view"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/px25"
+                android:layout_weight="1"
+                android:hint="@string/login_input_phone_number"
+                android:imeOptions="actionNext"
+                android:inputType="phone" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/common_line" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/bottom_space"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px20" >
+    </View>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/common_line" />
+
+    <LinearLayout
+        android:id="@+id/itemGroup2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_item_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/verifyNumber"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px100" >
+
+            <TextView
+                android:id="@+id/verifyNumberDes"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="@dimen/px30"
+                android:paddingRight="@dimen/px30"
+                android:text="@string/verify_code"
+                android:textSize="@dimen/font_32px" >
+            </TextView>
+
+            <com.scsy150.widget.EditTextDel
+                android:id="@+id/verifyNumberInput"
+                style="@style/common_edit_view"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="@string/login_change_verify_code"
+                android:imeOptions="actionDone" />
+
+            <ImageView
+                android:id="@+id/changeVerifyCode"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/px30"
+                android:src="@null" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/common_line" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/get_verify_code"
+        style="@style/common_red_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80"
+        android:layout_marginBottom="@dimen/px20"
+        android:layout_marginLeft="@dimen/px30"
+        android:layout_marginRight="@dimen/px30"
+        android:layout_marginTop="@dimen/px20"
+        android:text="@string/login_get_verify_code" >
+    </TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+    </View>
+
+</LinearLayout>

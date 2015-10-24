@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_grey_bg_color"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px30"
+        android:drawableLeft="@drawable/wallet_account"
+        android:drawablePadding="@dimen/px4"
+        android:text="@string/wallet_accout"
+        android:textSize="@dimen/font_32px" >
+    </TextView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/common_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_item_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_item_bg"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/setting_opt2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px100" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/px30"
+                    android:paddingRight="@dimen/px30"
+                    android:text="@string/wallet_money"
+                    android:textSize="@dimen/font_32px" />
+
+                <TextView
+                    android:id="@+id/wallet_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="0"
+                    android:textColor="#ff6b0f"
+                    android:textSize="@dimen/font_34px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingRight="@dimen/px30"
+                    android:text="@string/yuan"
+                    android:textSize="@dimen/font_34px" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/px30"
+                android:background="@color/common_line" />
+
+            <LinearLayout
+                android:id="@+id/setting_opt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/common_item_bg"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px100" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:drawableRight="@drawable/wallet_gold"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/px30"
+                            android:paddingRight="@dimen/px30"
+                            android:text="@string/wallet_gold"
+                            android:textSize="@dimen/font_32px" />
+                    </LinearLayout>
+
+                    <TextView
+                     android:id="@+id/wallet_gold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:text="0"
+                        android:textColor="#ff6b0f"
+                        android:textSize="@dimen/font_34px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/px20"
+                        android:paddingRight="@dimen/px30"
+                        android:text="@string/wallet_gold_to_value"
+                        android:textColor="#126ac9"
+                        android:textSize="@dimen/font_34px" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/common_line" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px30"
+        android:drawableLeft="@drawable/wallet_value"
+        android:text="@string/wallet_value"
+        android:textSize="@dimen/font_32px" >
+    </TextView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/common_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_item_bg"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/wallet_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

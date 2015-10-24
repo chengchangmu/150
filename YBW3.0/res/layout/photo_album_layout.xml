@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@color/theme_color"
+        android:padding="@dimen/px10" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/px10"
+            android:background="@null"
+            android:drawableLeft="@drawable/back"
+            android:text="@string/back"
+            android:drawablePadding="@dimen/px10"
+            android:textColor="@color/white_font"
+            android:textSize="@dimen/font_32px" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/white_font"
+            android:text="@string/photo"
+            android:textSize="@dimen/font_32px" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/px10"
+            android:background="@null"
+            android:drawableLeft="@drawable/back"
+            android:text="@string/back"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/px20"
+        android:numColumns="4" >
+    </GridView>
+
+</LinearLayout>

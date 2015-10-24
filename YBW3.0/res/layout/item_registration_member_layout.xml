@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.scsy150.util.view.CircleImageView
+        android:id="@+id/civ_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px30"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/civ_head"
+        android:layout_toRightOf="@id/civ_head"
+        android:text="会飞的猪"
+        android:layout_marginTop="@dimen/px10"
+        android:textSize="@dimen/font_36px"
+        android:textStyle="bold" />
+    
+    <ImageView
+        android:id="@+id/iv_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/civ_head"
+        android:layout_alignLeft="@id/tv_name"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginBottom="@dimen/px10"
+        android:src="@drawable/female" />
+
+    <TextView
+        android:id="@+id/tv_age"
+        android:layout_marginBottom="@dimen/px10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px20"
+        android:layout_alignBottom="@+id/iv_gender"
+        android:layout_toRightOf="@+id/iv_gender"
+        android:text="25岁" />
+
+</RelativeLayout>

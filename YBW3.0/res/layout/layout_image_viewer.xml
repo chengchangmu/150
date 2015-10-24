@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_black_bg_color"
+    android:orientation="vertical" >
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:layout_gravity="center" />
+
+    <com.scsy150.widget.scaleimage.PhotoView
+        android:id="@+id/drag_image_viewer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@android:color/transparent"
+        android:scaleType="center" />
+</FrameLayout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_mp_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="@dimen/px20" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_item_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px20"
+            android:layout_marginTop="@dimen/px20"
+            android:ems="4"
+            android:text="@string/need_to_pay"
+            android:textColor="@color/item_desc_time"
+            android:textSize="@dimen/font_32px" />
+
+        <TextView
+            android:id="@+id/pop_mp_tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px20"
+            android:text="@string/member_cost"
+            android:textColor="@color/black_font"
+            android:textSize="@dimen/font_32px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_item_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px20"
+            android:layout_marginTop="@dimen/px20" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/payment_method"
+                android:textColor="@color/item_desc_time"
+                android:textSize="@dimen/font_34px" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px20"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/circle_bt_select"
+                    android:drawablePadding="@dimen/px10"
+                    android:text="@string/alipay"
+                    android:textColor="@color/black_font" />
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/circle_bt_select"
+                    android:drawablePadding="@dimen/px10"
+                    android:text="@string/wechat"
+                    android:textColor="@color/black_font" />
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/circle_bt_select"
+                    android:drawablePadding="@dimen/px10"
+                    android:text="@string/credit_card"
+                    android:textColor="@color/black_font" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px40"
+            android:layout_marginTop="@dimen/px20" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ems="4"
+                android:text="@string/payment_method"
+                android:visibility="invisible" />
+
+            <CheckedTextView
+                android:id="@+id/pop_mp_ct_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableLeft="@drawable/check_selecter"
+                android:drawablePadding="@dimen/px10"
+                android:text="@string/coupon"
+                android:textColor="@color/grey_deep_font" />
+
+            <TextView
+                android:id="@+id/tv_userCoupons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px20"
+                android:text="@string/tt_yuan"
+                android:textColor="@color/black_font" />
+
+            <ImageView
+                android:id="@+id/iv_youhui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px10"
+                android:padding="@dimen/px10"
+                android:src="@drawable/xljtjt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px40"
+            android:layout_marginTop="@dimen/px20" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ems="4"
+                android:text="@string/payment_method"
+                android:visibility="invisible" />
+
+            <CheckedTextView
+                android:id="@+id/pop_mp_ct_cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/check_selecter"
+                android:drawablePadding="@dimen/px10"
+                android:text="@string/cash"
+                android:textColor="@color/black_font" />
+
+            <TextView
+                android:id="@+id/money_sale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/money_sale" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px40"
+            android:layout_marginTop="@dimen/px20" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ems="4"
+                android:text="@string/payment_method"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/now_user" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px5"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:maxEms="5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yuan" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_item_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px20"
+                android:layout_marginTop="@dimen/px20"
+                android:ems="4"
+                android:text="@string/mytableNum"
+                android:textColor="@color/item_desc_time"
+                android:textSize="@dimen/font_32px" />
+
+            <EditText
+                android:id="@+id/pop_mp_table_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px5"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:maxEms="5" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px88"
+            android:layout_margin="@dimen/px20"
+            android:background="@color/theme_color"
+            android:text="@string/confirm"
+            android:textColor="@color/bt_back_white_gray"
+            android:textSize="@dimen/font_32px" />
+    </LinearLayout>
+
+</LinearLayout>

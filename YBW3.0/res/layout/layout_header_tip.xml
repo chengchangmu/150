@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/header_tip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px50"
+        android:layout_alignParentTop="true"
+        android:background="@color/common_notify_bg_color"
+        android:drawableLeft="@drawable/no_wifi_notify"
+        android:drawablePadding="@dimen/px15"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="@dimen/px20"
+        android:text="@string/base_head_net_notify"
+        android:textColor="@color/common_btn_black_text"
+        android:textSize="@dimen/font_24px" />
+
+</RelativeLayout>

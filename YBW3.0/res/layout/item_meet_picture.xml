@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res/com.scsy150">
+
+    <com.scsy150.widget.RoundedImageView
+        xmlns:app="http://schemas.android.com/apk/res/com.scsy150"
+        android:id="@+id/iv_meet_picture"
+        android:layout_width="@dimen/px114"
+        android:layout_height="@dimen/px114"
+        android:layout_marginEnd="@dimen/px10"
+        android:layout_marginRight="@dimen/px5"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        app:border_color="@color/white"
+        app:border_width="@dimen/px1"
+        app:corner_radius="@dimen/px4" />
+
+</FrameLayout>

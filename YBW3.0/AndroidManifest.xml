@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.scsy150"
+    android:versionCode="3"
+    android:versionName="3.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 添加可以向外拨打电话的权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name=".base.YBWApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- meta-data需要写在application中 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="eHFD8UgbYLV7hffhtbRlfaEK" />
+
+        <activity
+            android:name=".main.GuideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".account.RegistLoginEntryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".account.RegistStepOneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".account.RegistStepTwoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".account.RegistAddPersonalInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.ContentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".account.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".account.RegistStatusActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".account.LoginForgetPwActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".account.ResetPwActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.ImageViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.MapSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.crop.CropImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.activity.FirstPointActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.activity.AllContactsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.activity.WalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.activity.AuthActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.activity.InfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.activity.MyOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.activity.OrderDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.activity.IngActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PageIndicatorDefaults" />
+        <activity
+            android:name=".mine.activity.OrderListActivity"
+            android:theme="@style/Theme.PageIndicatorDefaults" />
+        <activity
+            android:name=".mine.activity.VoiceActivity"
+            android:theme="@style/Theme.PageIndicatorDefaults" />
+        <activity
+            android:name=".chat.activity.ChatActivity"
+            android:theme="@style/Theme.PageIndicatorDefaults" />
+        <activity
+            android:name=".chat.activity.AuthMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".chat.activity.AlertDialog"
+            android:theme="@style/Theme.PageIndicatorDefaults" />
+        <activity
+            android:name=".chat.activity.AuthMessageAndSureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.crop.CropImageMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- Meet聚会页面 -->
+        <activity android:name=".meet.activity.ConfirmOrderActivity" />
+        <activity android:name=".meet.activity.OrganizerDetailInfoActivity" />
+        <activity
+            android:name=".meet.activity.DialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity android:name=".meet.activity.EnrollActivity" />
+        <activity android:name=".meet.activity.EnrolledMemberAcitivity" />
+        <activity android:name=".meet.activity.EnrollSuccessActivity" />
+        <activity android:name=".meet.activity.MeetDetailActivity" />
+        <activity android:name=".meet.activity.PhotoViewerActivity" />
+
+        <!-- date -->
+        <activity
+            android:name=".date.activity.UserInfoAcitivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+        <activity android:name="com.scsy150.date.activity.DatingSitesActivity" />
+        <activity android:name="com.scsy150.date.activity.MerchantDetailsActivity" />
+        <activity android:name="com.scsy150.date.activity.PhotoActivity" />
+        <activity
+            android:name="com.scsy150.date.activity.DateHeadActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.scsy150.date.activity.NowDateHeadActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <!-- date -->
+
+
+        <!-- 开机自启动服务 -->
+        <receiver android:name="com.easemob.chat.StartServiceReceiver" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 设置环信应用的appkey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="zubu#ybw150" />
+        <!-- 声明sdk所需的service -->
+        <service android:name="com.easemob.chat.EMChatService" />
+
+        <!-- 百度地图所需的service -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+        <!-- umeng appkey，可忽略 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="55ec134be0f55a11460013ba" >
+        </meta-data>
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="eHFD8UgbYLV7hffhtbRlfaEK" />
+    </application>
+
+</manifest>

@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  -->
+    <string name="exit">退出150?</string>
+
+    <string name="money_sale">(%1$d)元</string>
+    <string name="need_to_pay">需支付</string>
+
+
+    <string name="confirmed_code">已确认消费码</string>
+    <string name="not_code">未确认消费码</string>
+
+    <string name="ing">进行中</string>
+    
+    <string name="rejected">已拒绝</string>
+    <string name="agreed">已同意</string>
+    <string name="rfeuse">拒绝</string>
+    <string name="operation_failure">操作失败</string>
+
+    <!--  -->
+    <string name="system_app_item_mer">商家:</string>
+    <string name="system_app_item_name">套餐名称:</string>
+    <string name="system_app_item_total">套餐总价:</string>
+    <string name="system_app_item_desc">说明:</string>
+
+    <!--  -->
+    <string name="Recording_without_permission">无录音权限</string>
+    <string name="The_recording_time_is_too_short">录音时间太短</string>
+    <string name="send_failure_please">发送失败，请检测服务器是否连接</string>
+    <string name="recoding_fail">录音失败，请重试！</string>
+    <string name="Send_voice_need_sdcard_support">发送语音需要sdcard支持</string>
+    <string name="Whether_to_empty_all_chats">是否清空所有聊天记录</string>
+    <string name="The_file_is_not_greater_than_10_m">文件不能大于10M</string>
+    <string name="cant_find_pictures">找不到图片</string>
+    <string name="File_does_not_exist">文件不存在</string>
+    <string name="sd_card_does_not_exist">SD卡不存在，不能拍照</string>
+    <string name="not_connect_to_server">尚未连接至服务器，请稍后重试</string>
+    <string name="Move_into_blacklist_success">移入黑名单成功</string>
+    <string name="Move_into_blacklist_failure">移入黑名单失败</string>
+    <string name="unable_to_get_loaction">无法获取到您的位置信息!</string>
+    <string name="Send_the_following_pictures">发送以下图片？</string>
+    <string name="Download_the_pictures_new">下载图片:</string>
+    <string name="Download_the_pictures">下载图片: 0%</string>
+    <string name="downwaiting">正在下载文件请稍后</string>
+    <string name="Failed_to_download_file">下载文件失败:</string>
+    <string name="Have_downloaded">已下载</string>
+    <string name="Did_not_download">未下载</string>
+    <string name="Into_the_blacklist">移入到黑名单？</string>
+    <string name="Is_download_voice_click_later">正在下载语音，稍后点击</string>
+    <string name="not_download">未下载:</string>
+    <string name="text_ack_msg">已读</string>
+    <string name="text_delivered_msg">送达</string>
+    <string name="back">返回</string>
+    <string name="button_pushtotalk">按住说话</string>
+    <string name="button_send">发送</string>
+    <string name="attach_smile">表情</string>
+    <string name="attach_picture">图片</string>
+    <string name="attach_take_pic">拍照</string>
+    <string name="attach_location">位置</string>
+    <string name="attach_file">文件</string>
+    <string name="attach_voice_call">语音电话</string>
+    <string name="attach_video_call">视频通话</string>
+    <string name="user_card">名片</string>
+    <string name="move_up_to_cancel">手指上滑，取消发送</string>
+    <string name="release_to_cancel">松开手指，取消发送</string>
+    <string name="send_fail">发送消息失败,</string>
+    <string name="delete_message">删除消息</string>
+    <string name="copy_message">复制消息</string>
+    <string name="delete_voice">删除语音</string>
+    <string name="delete_video">删除视频</string>
+    <string name="delete">删除</string>
+    <string name="resend">重发</string>
+    <string name="confirm_resend">确认重发该信息？</string>
+    <string name="connect_failuer_toast">请检查网络或稍候重试</string>
+    <string name="network_unavailable">网络连接不可用，请检查网络</string>
+    <string name="copy">复制</string>
+    <string name="forward">转发</string>
+    <!-- 订单详情 -->
+    <string name="auth_student">学生认证</string>
+    <string name="upload_more">上传更多</string>
+    <string name="order_details_title">订单详情</string>
+    <string name="order_details_num">订单号</string>
+    <string name="order_details_status">订单状态</string>
+    <string name="order_details_type">订单类型</string>
+    <string name="order_details_date">订单日期</string>
+    <string name="order_details_pingfen">评分:</string>
+    <string name="order_details_pay_mode">支付方式</string>
+    <string name="order_details_refund_date">退款日期</string>
+    <string name="order_details_totak">订单总额</string>
+    <string name="order_details_value">优惠券</string>
+    <string name="order_details_rapy_ratio">付款比例</string>
+    <string name="order_details_refund">已退款</string>
+
+    <!-- 订单 -->
+    <string name="order_evaluation">评价</string>
+    <string name="order_real_payment">实付款:</string>
+    <string name="order_money">￥%1$s</string>
+    <!--  -->
+    <string name="input_num">最多输入%1$s秒后重发个字符</string>
+    <string name="input_sign_hint">请输入你的个性签名</string>
+    <string name="input_nickname_hint">请输入你的昵称</string>
+    <!-- 录音 -->
+    <string name="voice_play">播放录音</string>
+    <string name="voice_play_speak">按住说话</string>
+    <string name="voice_reset">重新录制</string>
+    <string name="voice_del">删除录音</string>
+
+    <!-- 支付状态 -->
+    <string name="alipay_status_all">全部</string>
+    <string name="alipay_status_pay">待付</string>
+    <string name="alipay_status_cancel">取消</string>
+    <string name="alipay_status_ed">已付</string>
+    <string name="alipay_status_ok">完成</string>
+    <string name="mine_head_look">查看大头像</string>
+    <string name="mine_head_select">选择认证照片</string>
+    <string name="mine_head_dopick">拍照</string>
+
+    <!-- 个人资料 -->
+    <string name="info_voice">语音介绍</string>
+    <string name="info_pic">相册</string>
+    <string name="info_sign">个性签名</string>
+    <string name="info_base">基本资料</string>
+    <string name="info_nickname">昵称</string>
+    <string name="info_birthday">生日</string>
+
+    <!-- 我的认证 -->
+    <string name="auth_pic_title">照片认证 </string>
+    <string name="auth_pic_no_desc">你还没有认证照片哦</string>
+
+    <!-- 我的钱包 -->
+    <string name="wallet_accout">帐户余额 </string>
+    <string name="wallet_money">现金</string>
+    <string name="wallet_gold">金币</string>
+    <string name="wallet_value">优惠券</string>
+    <string name="wallet_gold_to_value">兑换</string>
+    <string name="wallet_item_title">%1$s元优惠券</string>
+    <string name="wallet_item_num">到期时间%1$s天</string>
+
+    <!-- setting -->
+    <string name="setting_opt1">对普通用户可见 </string>
+    <string name="setting_opt2">修改密码</string>
+    <string name="setting_opt3">手势密码</string>
+    <string name="setting_opt4">清除缓存</string>
+    <string name="setting_opt5">关于150</string>
+    <string name="setting_opt6">用户协议</string>
+    <string name="setting_opt7">意见反馈</string>
+    <string name="setting_opt8">软件更新</string>
+    <string name="setting_exit">退出登录</string>
+    <string name="app_name">一百五</string>
+    <!--  -->
+    <string name="session">会话</string>
+    <string name="Cant_chat_with_yourself">不能和自己聊天</string>
+    <string name="user_option1">钱包</string>
+    <string name="user_option2">认证</string>
+    <string name="user_option3">进行中</string>
+    <string name="user_option4">订单</string>
+    <string name="user_option5">动态</string>
+    <string name="user_option6">关注</string>
+    <string name="user_option7">联系人</string>
+    <string name="user_option8">初遇点</string>
+    <string name="user_option9">资料</string>
+    <string name="user_option10">设置</string>
+    <!--  -->
+    <string name="location_recv">[%1$s location]</string>
+    <string name="location_prefix">[my location]</string>
+    <string name="voice">voice</string>
+    <string name="picture">[picture]</string>
+    <string name="video">[video]</string>
+    <string name="file">[file]</string>
+    <string name="voice_call">[voice call]</string>
+    <!-- 注册帐号 -->
+    <string name="reg_acc">注册帐号</string>
+    <string name="wechat">微信</string>
+    <!-- 主页按钮 -->
+    <string name="fellowship">联谊</string>
+    <string name="date">约会</string>
+    <string name="news">消息</string>
+    <string name="mine">我的</string>
+    <string name="friend">好友</string>
+    <!-- 联谊 -->
+    <string name="nearby">附近</string>
+    <string name="hot">热门</string>
+    <string name="newest">最新</string>
+    <string name="more_female">妹子多</string>
+    <string name="more_male">帅哥多</string>
+    <string name="weekend">周末</string>
+    <string name="many_people_chose">手慢无</string>
+    <string name="lower_price">价格低</string>
+    <string name="multiply_img">多图</string>
+    <string name="distance">距离</string>
+    <string name="active_filters">活动筛选</string>
+    <string name="activitytype">活动类型</string>
+    <string name="campusactivity">校园活动</string>
+    <string name="makefriendactivity">交友活动</string>
+    <string name="activityareas">活动地区</string>
+    <string name="all">全部</string>
+    <string name="JiangbeiDistrict">江北区</string>
+    <string name="Yuzhongdistrict">渝中区</string>
+    <string name="ShapingbaDistrict">沙坪坝区</string>
+    <string name="Nanandistrict">南岸区</string>
+    <string name="YubeiDistrict">渝北区</string>
+    <string name="activetime">活动时间:</string>
+    <string name="today">今天</string>
+    <string name="tomorrow">明天</string>
+    <string name="thisweek">本周</string>
+    <string name="thismonth">本月</string>
+    <string name="activeprice">活动价格</string>
+    <string name="reset">重置</string>
+    <string name="confirm">确定</string>
+    <string name="kilometer">%1$s千米</string>
+    <string name="member_number">%1$d人</string>
+    <string name="member_cost">%1$s元</string>
+    <string name="member_age_range">%1$s后</string>
+    <string name="step_0">1</string>
+    <string name="step_0_des">签到入场</string>
+    <string name="step_1">2</string>
+    <string name="step_1_des">领取卡片</string>
+    <string name="step_2">3</string>
+    <string name="step_2_des">自我介绍</string>
+    <string name="step_3">4</string>
+    <string name="step_3_des">游戏环节</string>
+    <string name="step_4">5</string>
+    <string name="step_4_des">牵手心仪对象</string>
+    <string name="step_5">6</string>
+    <string name="step_5_des">活动完成</string>
+    <!-- 约会 -->
+    <string name="add_contacts">通讯录</string>
+    <string name="appointment">预约</string>
+    <string name="present">现场约</string>
+    <string name="now_date">立即约</string>
+    <string name="bussin">商家</string>
+    <string name="combo">套餐费:</string>
+    <string name="payment_proportion">付款比例:</string>
+    <string name="me_pay">我付</string>
+    <string name="aa_pay">AA</string>
+    <string name="mytableNum">我的桌号:</string>
+    <string name="you_pay">你付</string>
+    <string name="age">岁</string>
+    <string name="hou">后</string>
+    <string name="mi">m</string>
+    <string name="detailed_information">详细资料</string>
+    <string name="visitor">最近来访:</string>
+    <string name="from">来自:</string>
+    <string name="allVis">总访问量</string>
+    <string name="ghq">根号七</string>
+    <string name="care">关注</string>
+    <string name="add_date">加入约单</string>
+    <string name="photo">相册</string>
+    <string name="like">喜欢</string>
+    <string name="detailed">详情</string>
+    <string name="change">更换</string>
+    <string name="date_fee">约会服务费</string>
+    <string name="date_time">约会时间</string>
+    <string name="state">说明:</string>
+    <string name="payment_method">支付方式</string>
+    <string name="date_statement">* 可选三个时间，最终由对方选择其中一个进行约会。</string>
+    <string name="date_text">交个朋友，吃饭聊天</string>
+    <string name="date_text_go">这家不错，一起去吧</string>
+    <string name="date_text_drink">想喝点吗，我们一起</string>
+    <string name="date_combo">约会套餐:</string>
+    <string name="combo_name">套餐名称:</string>
+    <string name="combo_price">套餐价格:</string>
+    <string name="service_fee">服务费:</string>
+    <string name="combo_all_fee">套餐总价:</string>
+    <string name="other">其他服务:</string>
+    <string name="yuding">预定位置特权</string>
+    <string name="coupon">优惠券</string>
+    <string name="cash">现金余额</string>
+    <string name="kuohao">(</string>
+    <string name="kuohaoL">)</string>
+    <string name="now_user">当前使用</string>
+    <string name="bs_info">商家详情</string>
+    <string name="bs_name">商家名称:</string>
+    <string name="see_info">查看资料</string>
+    <string name="add_list">加入约单</string>
+    <string name="date_ob">约会对象:</string>
+    <string name="my_table">我的桌号:</string>
+    <string name="no_user_Coupons">不使用优惠券</string>
+    <string name="tt_yuan">20元优惠券</string>
+    <string name="tr_yuan">30元优惠券</string>
+    <string name="pickerview_cancel">取消</string>
+    <string name="pickerview_submit">确定</string>
+    <string name="pickerview_year">年</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_seconds">秒</string>
+    <string name="pl_chose">请选择</string>
+    <string name="man">男</string>
+    <string name="woman">女</string>
+    <!-- 消息 -->
+    <string name="system">系统</string>
+    <string name="conversation">会话</string>
+    <!-- 联谊详情 -->
+    <string name="meet_detail">联谊详情</string>
+    <string name="registration_number">已报名人数:</string>
+    <string name="organizer">主办方:</string>
+    <string name="organizer2">主办方</string>
+    <string name="meet_photo">活动相册</string>
+    <string name="meet_process">活动流程</string>
+    <string name="meet_details">活动详情</string>
+    <string name="spread_details">展开</string>
+    <string name="share">分享</string>
+    <string name="signup_immediately">立即报名</string>
+    <string name="release">发布</string>
+    <string name="condition">活动筛选</string>
+
+    <!-- 报名成员 -->
+    <string name="registration_member">报名成员</string>
+    <string name="reverlall">显示全部</string>
+    <string name="only_female">只看女生</string>
+    <string name="only_male">只看男生</string>
+    <!-- 资料审核 -->
+    <string name="re_upload">重新上传</string>
+    <string name="audit_info_title">资料审核</string>
+    <string name="audit_through">恭喜你，上传的头像审核通过</string>
+    <string name="audit_failure">对不起，上传的头像审核失败</string>
+    <string name="audit">上传的头像正在审核，请耐心等待</string>
+    <string name="audit_desc">为了照片真实和见面安全，一百五通过拍照机制防止虚假会员头像</string>
+    <!-- 立即报名 -->
+    <string name="basic_information">基本信息</string>
+    <string name="name">姓名:</string>
+    <string name="gender">性别:</string>
+    <string name="cell_phone_number">手机号:</string>
+    <string name="order_information">订单信息</string>
+    <string name="name_of_activity">活动名称:</string>
+    <string name="PaymentInformation">支付信息</string>
+    <string name="title_activity_confirm_order">立即报名</string>
+    <string name="discountcoupon">优惠券</string>
+    <string name="cashre_serve">现金余额</string>
+    <string name="currentuse">当前使用</string>
+    <string name="otherway_stopay">其他支付方式:</string>
+    <string name="alipay">支付宝</string>
+    <string name="weipay">微信</string>
+    <string name="credit_card">信用卡</string>
+    <string name="agree">同意</string>
+    <string name="with_hold">《代扣协议》</string>
+    <string name="submit">提交报名</string>
+    <string name="confirm_order">确认付款</string>
+    <string name="choose_date_place">请选择约会场所</string>
+    <string name="combo_content">套餐内容:</string>
+    <string name="peole_fee">人均消费</string>
+    <string name="yuan">元</string>
+    <string name="female">男</string>
+    <string name="male">女</string>
+    <!-- 报名确认 -->
+    <string name="user_info">基本信息:</string>
+    <string name="user_name">姓名:</string>
+    <string name="user_sex">性别:</string>
+    <string name="user_phone">手机号码:</string>
+    <string name="user_pay_detail">付款详情</string>
+    <string name="user_order_info">支付宝账户</string>
+    <string name="user_alipay_account">支付宝账户</string>
+    <string name="user_pay_way">付款方式</string>
+    <string name="user_need_pay">需付款</string>
+    <!-- 报名成功 -->
+    <string name="congratulation">恭喜你，报名成功！</string>
+    <string name="order_no">订单号:</string>
+    <string name="meet_name">活动名称:</string>
+    <string name="meet_date">活动时间:</string>
+    <string name="meet_location">活动地点:</string>
+    <string name="meet_cost">活动费用:</string>
+    <string name="business_phone">商家电话:</string>
+    <string name="pay_mode">支付方式:</string>
+    <string name="contact">联系商家</string>
+    <string name="order_list">订单列表</string>
+    <string name="order_success">成功预定</string>
+    <!-- 主办方 -->
+    <string name="CircleofFriends">朋友圈</string>
+    <string name="first_meet_place">初遇点</string>
+    <string name="attention">关注</string>
+    <string name="all_activities">所有聚会</string>
+    <!--  -->
+    <string name="get_data_error_click">获取数据失败，点击重试</string>
+    <string name="loading_data">拼命加载数据中...</string>
+    <!-- common -->
+    <string name="main_title">一百五 - 交友</string>
+    <string name="sure">确定</string>
+    <string name="no_data">无数据</string>
+    <string name="tip">提示</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="please_input">请输入</string>
+    <string name="not_net_tip">您的设备这会儿没有连上数据网络。请检查手机信号，同时确保“设置->无线和网络“开关是打开的。另外，您也可以把设备连接到WiFi网络上。请在设备能连上网络后，再回到这里重试。</string>
+    <string name="cancel">取消</string>
+    <string name="finish">完成</string>
+    <string name="next_step">下一步</string>
+    <string name="phone_number">手机号</string>
+    <string name="password">密　码</string>
+    <string name="group_chat">群聊</string>
+    <string name="Application_and_notify">申请与通知</string>
+    <string name="password_with_space">密&#160;&#160;&#160;&#160;码</string>
+    <string name="new_password">新密码</string>
+    <string name="verify_code">验证码</string>
+    <string name="login">登录</string>
+    <string name="sex">性别</string>
+    <string name="birthday">生日</string>
+    <string name="user_nor">普通用户</string>
+    <string name="user_student">学生用户</string>
+    <string name="get_data_error">服务器内部错误</string>
+    <string name="error_tip_title">出错啦</string>
+    <string name="code_success">获取验证码成功</string>
+    <string name="code_cancel">取消获取验证码</string>
+    <string name="code_error">获取验证码失败</string>
+    <string name="base_load_failed_title">数据加载失败</string>
+    <string name="base_load_failed_des">请检查网络</string>
+    <string name="base_head_net_notify">网络请求失败，请检查你的网络</string>
+    <!-- 注册登录界面 -->
+    <string name="regist_login_title">一百五</string>
+    <string name="regist_login_regist">注册</string>
+    <string name="regist_login_login">登录</string>
+    <!-- 注册界面 -->
+    <string name="regist_step_one">手机号注册</string>
+    <string name="regist_des">轻触\"下一步\"按钮,即表示您同意《一百五注册协议》</string>
+    <string name="regist_step_two">注册2/2</string>
+    <string name="regist_step_two_des">请设置密码，设置后可使用手机号+密码登录</string>
+    <string name="regist_finish">完成注册</string>
+    <string name="login_right_now">直接登录</string>
+    <string name="input_phone_num">请先输入手机号码</string>
+    <string name="input_the_register_phone">请输入您注册的手机号码</string>
+    <string name="input_right_phone_num">请填写正确的手机号码</string>
+    <string name="insert_identifying_code">请获取您的的验证码</string>
+    <string name="register_phone_different">获取验证码时的号码和当前号码不一致,请重新获取验证码</string>
+    <string name="register_finish">恭喜你已经完成注册！</string>
+    <string name="register_please_input_pw">请设置密码</string>
+    <string name="register_error_length">密码长度请设置为4-20位字符</string>
+    <string name="license_title">注册协议</string>
+    <string name="please_input_verify_code">请输入验证码</string>
+    <string name="set_password">请设置4-12位密码</string>
+    <string name="get_verify_code">获取验证码</string>
+    <string name="reget_verify_code">后重新获取验证码</string>
+    <!-- 完善个人信息界面 -->
+    <string name="regist_add_personal_info">填写资料</string>
+    <string name="regist_add_des">请如实填写您的信息，否则将影响您获得的奖励</string>
+    <string name="regist_add_ignore">跳过</string>
+    <string name="select_user">请选择一个角色</string>
+    <string name="regist_name_is_null">请填写你的真实姓名</string>
+    <string name="regist_input_name">请输入真实姓名</string>
+    <string name="gg">男</string>
+    <string name="mm">女</string>
+
+    <array name="regist_sex">
+        <item>男</item>
+        <item>女</item>
+    </array>
+    <!-- 登录界面 -->
+    <string name="login_title">登录</string>
+    <string name="login_input_pw">请输入密码</string>
+    <string name="login_input_phone_number">请输入手机号</string>
+    <string name="login_forget_password">忘记密码？</string>
+    <string name="phone_or_pwd_is_null">手机号或密码不能为空！</string>
+    <string name="auto_login_failed">自动登录失败，请重新登录</string>
+    <!-- 忘记密码界面 -->
+    <string name="login_forget_pw">忘记密码</string>
+    <string name="login_get_verify_code">获取验证码</string>
+    <string name="phone_num_can_not_null">手机号码不能为空！</string>
+    <string name="login_change_verify_code">看不清可点击更换</string>
+    <!-- 重置密码界面 -->
+    <string name="reset_pw">设置新密码</string>
+    <string name="verify_code_to_user_note">已发送验证码到您的手机</string>
+    <string name="re_send_pw">%1$d秒后重发</string>
+    <string name="confirm_submit">确认提交</string>
+    <string name="pw_note">密码长度为4到20个字符</string>
+    <string name="input_normal_code_txt">请输入短信验证码:</string>
+    <string name="input_new_pwd_txt">输入新密码:</string>
+    <string name="input_code_is_wrong">您输入的验证码不正确</string>
+    <string name="input_new_pwd">请输入新密码</string>
+    <string name="reset_pwd">设置新密码</string>
+    <string name="pwd_length_error">密码长度不对，长度为4到20个字符</string>
+    <string name="get_code_again">重新发送</string>
+    <string name="pelase_set_new_pw">请设置新密码</string>
+    <!-- data picker -->
+    <array name="am_or_pm">
+        <item>上午</item>
+        <item>下午</item>
+    </array>
+
+    <string name="day">日</string>
+    <!-- image viewer -->
+    <string name="image_view_title">图片查看</string>
+    <string name="image_view_error">图片路径错误或未找到对应图片</string>
+    <!-- map select -->
+    <string name="map_mark">地图标记</string>
+    <string name="save">保存</string>
+    <string name="map_mark_title">精准投放点设置</string>
+    <string name="map_mark_no_data_txt">您还没有标记任何精准投放点</string>
+    <string name="map_mark_add_txt">快去添加吧</string>
+    <string name="overlay_object">覆盖物</string>
+    <string name="network_connection_error">当前网络不可用</string>
+    <string name="network_package_error">网络数据包错误</string>
+    <string name="baidu_map_access_error">授权验证错误</string>
+    <string name="input_address">输入地址</string>
+    <string name="map_dialog_city_eg">城市</string>
+    <string name="map_dialog_addr_eg">详细地址</string>
+    <string name="input_city_name">请输入城市名</string>
+    <string name="input_addr_detail">请输入详细地址</string>
+    <string name="input_search_error">定位失败，请检查输入内容是否正确、网络是否正常</string>
+    <!-- crop image -->
+    <string name="image_upload">图片上传</string>
+    <!-- common share -->
+    <string name="share_callback_success_string">分享成功</string>
+    <string name="share_callback_cancel_string">取消分享</string>
+    <string name="share_callback_error_string">分享失败</string>
+    <string name="share_content_qzone_string">#手机#一百五，可以赚钱的手机APP，每天最高可赚1万元，1亿商品免费换，我换你也换，小伙伴们赶紧下载吧！点击下载</string>
+    <string name="share_site_name_string">一百五</string>
+    <!-- 咨询 -->
+    <string name="activity_consult_title">咨询</string>
+    <string name="activity_consult_tip1">请输入你想咨询的内容</string>
+    <string name="activity_consult_tip2">请填写咨询内容</string>
+    <string name="activity_consult_tip3">还可以输入{0}字</string>
+    <string name="activity_consult_tip4">向该商家展示你的联系方式</string>
+    <string name="activity_consult_tip5">电话</string>
+    <string name="activity_consult_tip6">QQ</string>
+    <string name="activity_consult_tip7">邮箱</string>
+    <string name="activity_consult_tip8">提交</string>
+    <string name="activity_consult_tip9">请输入电话号码</string>
+    <string name="activity_consult_tip10">请输入QQ号码</string>
+    <string name="activity_consult_tip11">请输入邮箱地址</string>
+    <!-- 主界面 -->
+    <string name="ad_look">聚会</string>
+    <string name="ad_enterpise">约会</string>
+    <string name="ad_dynamic">动态</string>
+    <string name="ad_message">消息</string>
+    <string name="ad_mine">我</string>
+    <string name="look_goods">超值商品</string>
+    <string name="look_enterprise">推荐商家</string>
+    <string name="look_other">换一组</string>
+    <string name="look_more">更多</string>
+    <string name="title_activity_order_list">OrderListActivity</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

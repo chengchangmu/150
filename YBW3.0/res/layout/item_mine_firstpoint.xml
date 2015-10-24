@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <com.scsy150.util.view.CircleImageView
+        android:id="@+id/item_img"
+        android:layout_width="@dimen/px216"
+        android:layout_height="@dimen/px216"
+        android:layout_margin="@dimen/px30"
+        android:src="@drawable/default_avatar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@null"
+            android:textColor="@color/item_title"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/item_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px18"
+            android:layout_marginTop="@dimen/px18"
+            android:drawableLeft="@drawable/rs"
+            android:drawablePadding="@dimen/px10"
+            android:drawableStart="@drawable/rs"
+            android:textColor="@color/item_desc_time" />
+
+        <TextView
+            android:id="@+id/item_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/px20"
+            android:textColor="@color/item_desc_time" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_one_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px20"
+        android:layout_marginRight="@dimen/px20"
+        android:layout_marginTop="@dimen/px20"
+        android:gravity="center_horizontal"
+        android:text="@string/date_text"
+        android:textColor="@color/font_select"
+        android:textSize="@dimen/font_32px" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px4"
+        android:layout_marginLeft="@dimen/px20"
+        android:layout_marginRight="@dimen/px20"
+        android:layout_marginTop="@dimen/px20"
+        android:background="@color/white_font" />
+
+    <TextView
+        android:id="@+id/tv_two_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px20"
+        android:layout_marginRight="@dimen/px20"
+        android:layout_marginTop="@dimen/px20"
+        android:gravity="center_horizontal"
+        android:text="@string/date_text_go"
+        android:textColor="@color/font_select"
+        android:textSize="@dimen/font_32px" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px4"
+        android:layout_marginLeft="@dimen/px20"
+        android:layout_marginRight="@dimen/px20"
+        android:layout_marginTop="@dimen/px20"
+        android:background="@color/white_font" />
+
+    <TextView
+        android:id="@+id/tv_three_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px20"
+        android:layout_marginRight="@dimen/px20"
+        android:layout_marginTop="@dimen/px20"
+        android:gravity="center_horizontal"
+        android:text="@string/date_text_drink"
+        android:textColor="@color/font_select"
+        android:textSize="@dimen/font_32px" />
+
+</LinearLayout>

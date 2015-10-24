@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"><shape>
+            <gradient android:endColor="@color/white_pressed" android:gradientRadius="270" android:startColor="@color/white_pressed" android:type="radial" />
+        </shape></item>
+    <item android:state_focused="true"><shape>
+            <gradient android:endColor="@color/white_pressed" android:startColor="@color/white_pressed" />
+        </shape></item>
+    <item><shape>
+            <solid android:color="@color/white_normal" />
+        </shape></item>
+</selector>

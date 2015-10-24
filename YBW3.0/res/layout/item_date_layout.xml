@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/iv_date_head"
+            android:layout_width="@dimen/px260"
+            android:layout_height="@dimen/px260" />
+
+        <ImageView
+            android:id="@+id/iv_hot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:src="@drawable/hot_icon"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="@dimen/px60"
+            android:layout_height="@dimen/px30"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="@dimen/px10" >
+
+            <TextView
+                android:id="@+id/tv_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#eeff6b0f"
+                android:gravity="center_vertical"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/px24" />          
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/ff_chosse"
+        android:layout_width="@dimen/px260"
+        android:layout_height="@dimen/px260"
+        android:background="#5511bac9"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_margin="@dimen/px20"
+            android:src="@drawable/xzan" />
+    </FrameLayout>
+
+</FrameLayout>

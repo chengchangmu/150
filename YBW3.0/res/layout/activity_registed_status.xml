@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:scsy150="http://schemas.android.com/apk/res/com.scsy150.widget"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_grey_bg_color"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/common_line" />
+
+    <LinearLayout
+        android:id="@+id/itemGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_item_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/px30" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <com.scsy150.util.view.CircleImageView
+                android:id="@+id/head_status"
+                android:layout_width="@dimen/px160"
+                android:layout_height="@dimen/px160"
+                android:src="@drawable/default_head" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/audit_fail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/auth_fail"
+            android:gravity="center_vertical|left"
+            android:padding="@dimen/px10"
+            android:text="@string/audit_failure"
+            android:textSize="@dimen/font_32px" />
+
+        <TextView
+            android:id="@+id/audit_ing"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/tx"
+            android:gravity="center_vertical|left"
+            android:padding="@dimen/px10"
+            android:text="@string/audit"
+            android:textSize="@dimen/font_32px" />
+
+        <TextView
+            android:id="@+id/audit_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|left"
+            android:padding="@dimen/px5"
+            android:text="@string/audit_desc"
+            android:textSize="@dimen/font_24px" />
+
+        <TextView
+            android:id="@+id/re_upload"
+            style="@style/common_red_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px80"
+            android:layout_marginBottom="@dimen/px20"
+            android:layout_marginLeft="@dimen/px30"
+            android:layout_marginRight="@dimen/px30"
+            android:layout_marginTop="@dimen/px20"
+            android:text="@string/re_upload" />
+
+        <View
+            android:id="@+id/bottom_space"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

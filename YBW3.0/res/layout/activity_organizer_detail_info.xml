@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px490" >
+
+        <ImageView
+            android:id="@+id/iv_organizer_background"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px420"
+            android:scaleType="centerCrop"
+            android:src="@drawable/organizer_background" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/tv_organizer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/px224"
+                android:text="重庆某交友俱乐部"
+                android:textColor="@color/white_font"
+                android:textSize="@dimen/px34" />
+
+            <RatingBar
+                android:id="@+id/rb_organizer"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_organizer"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="@dimen/px10"
+                android:layout_marginTop="@dimen/px30" />
+
+            <TextView
+                android:id="@+id/tv_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/tv_organizer"
+                android:layout_alignTop="@+id/rb_organizer"
+                android:textSize="@dimen/px28"
+                android:text="3.1分" />
+
+            <com.scsy150.util.view.CircleImageView
+                android:id="@+id/civ_head_img"
+                android:layout_width="@dimen/px180"
+                android:layout_height="@dimen/px180"
+                android:layout_below="@+id/tv_rating"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/xzan" />
+
+            <TextView
+                android:id="@+id/tv_first_meet_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/civ_head_img"
+                android:drawableLeft="@drawable/first_meet_place"
+                android:gravity="center"
+                android:text="@string/first_meet_place"
+                android:layout_marginLeft="@dimen/px20"
+                android:textColor="@color/white_font" />
+            
+            <TextView
+                android:id="@+id/tv_attention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/civ_head_img"
+                android:drawableLeft="@drawable/attention"
+                android:gravity="center"
+                android:text="@string/attention"
+                android:layout_marginRight="@dimen/px20"
+                android:textColor="@color/white_font" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/px34"
+        android:textColor="@color/grey_deep_font"
+        android:paddingLeft="@dimen/px20"
+        android:paddingRight="@dimen/px20"
+        android:paddingBottom="@dimen/px40"
+        android:text="@string/all_activities"/>
+    <ListView
+        android:id="@+id/lv_organizer_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </ListView>
+
+</LinearLayout>

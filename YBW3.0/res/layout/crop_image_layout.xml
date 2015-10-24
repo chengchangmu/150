@@ -1,0 +1,63 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.scsy150.common.crop.CropImageView
+        android:id="@+id/cropImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/px4"
+        android:paddingLeft="@dimen/px20"
+        android:paddingRight="@dimen/px20"
+        android:paddingTop="@dimen/px4" >
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/blue_dep_selector"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="@string/save"
+            android:textColor="@color/common_white"
+            android:layout_marginRight="@dimen/px20"
+            android:textSize="@dimen/font_36px" />
+
+        <Button
+            android:id="@+id/rotate_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/turn_left" />
+		<View 
+		    android:layout_height="wrap_content"
+		    android:layout_width="@dimen/px20"/>
+        <Button
+            android:id="@+id/rotate_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/turn_right" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/blue_dep_selector"
+            android:paddingBottom="10dip"
+            android:layout_marginLeft="@dimen/px20"
+            android:paddingTop="10dip"
+            android:text="@string/cancel"
+            android:textColor="@color/common_white"
+            android:textSize="@dimen/font_36px" />
+    </LinearLayout>
+
+</FrameLayout>

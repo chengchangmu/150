@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_grey_bg_color"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/send_des"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px70"
+        android:gravity="bottom|left"
+        android:paddingBottom="@dimen/px14"
+        android:paddingLeft="@dimen/px30"
+        android:text="@string/verify_code_to_user_note"
+        android:textColor="@color/common_small_des_text"
+        android:textSize="@dimen/font_28px" >
+    </TextView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/common_line" />
+
+    <LinearLayout
+        android:id="@+id/itemGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/verify_code"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px100"
+            android:background="@color/common_item_bg" >
+
+            <TextView
+                android:id="@+id/verificationCode"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="@dimen/px30"
+                android:paddingRight="@dimen/px30"
+                android:text="@string/verify_code"
+                android:textSize="@dimen/font_32px" >
+            </TextView>
+
+            <com.scsy150.widget.EditTextDel
+                android:id="@+id/verificationCodeInput"
+                style="@style/common_edit_view"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/px25"
+                android:layout_weight="1"
+                android:hint="@string/please_input_verify_code"
+                android:imeOptions="actionNext" />
+
+            <TextView
+                android:id="@+id/resend_verify_code"
+                style="@style/common_white_button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px70"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/px30"
+                android:layout_marginRight="@dimen/px15"
+                android:paddingLeft="@dimen/px10"
+                android:paddingRight="@dimen/px10"
+                android:text="@string/re_send_pw" >
+            </TextView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/common_line" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/px20" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/common_line" />
+
+        <LinearLayout
+            android:id="@+id/newPw"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px100"
+            android:background="@color/common_item_bg" >
+
+            <TextView
+                android:id="@+id/pwTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="@dimen/px30"
+                android:paddingRight="@dimen/px30"
+                android:text="@string/new_password"
+                android:textSize="@dimen/font_32px" >
+            </TextView>
+
+            <com.scsy150.widget.EditTextDel
+                android:id="@+id/newPwInput"
+                style="@style/common_edit_view"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/px25"
+                android:layout_weight="1"
+                android:hint="@string/pelase_set_new_pw"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/hidePw"
+                android:layout_width="@dimen/px72"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/px30"
+                android:clickable="true"
+                android:src="@drawable/hide_pw_selector" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/common_line" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/regist_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px30"
+        android:layout_marginRight="@dimen/px30"
+        android:paddingTop="@dimen/px15"
+        android:text="@string/pw_note"
+        android:textColor="@color/common_small_des_text"
+        android:textSize="@dimen/font_28px" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/reset_pw_submit"
+        style="@style/common_red_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80"
+        android:layout_marginBottom="@dimen/px20"
+        android:layout_marginLeft="@dimen/px30"
+        android:layout_marginRight="@dimen/px30"
+        android:layout_marginTop="@dimen/px30"
+        android:text="@string/confirm_submit" >
+    </TextView>
+
+    <View
+        android:id="@+id/bottom_space"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+    </View>
+
+</LinearLayout>

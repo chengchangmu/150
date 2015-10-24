@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:scsy150="http://schemas.android.com/apk/res/com.scsy150.widget"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_grey_bg_color"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/common_line" />
+
+    <LinearLayout
+        android:id="@+id/itemGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_item_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/px30" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <com.scsy150.util.view.CircleImageView
+                android:id="@+id/head_reg"
+                android:layout_width="@dimen/px160"
+                android:layout_height="@dimen/px160"
+                android:src="@drawable/head" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px100"
+            android:paddingLeft="@dimen/px30" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:ems="4"
+                android:gravity="center_vertical|left"
+                android:text="@string/name"
+                android:textSize="@dimen/font_32px" >
+            </TextView>
+
+            <View
+                android:layout_width="@dimen/px30"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:id="@+id/nameInput"
+                style="@style/common_edit_view_align_right"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/px30"
+                android:layout_weight="1"
+                android:hint="@string/regist_input_name"
+                android:imeOptions="actionNext" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/px30"
+            android:background="@color/common_line" />
+
+        <LinearLayout
+            android:id="@+id/sex"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px100"
+            android:paddingLeft="@dimen/px30" >
+
+            <TextView
+                android:id="@+id/sexDes"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:ems="4"
+                android:gravity="center_vertical|left"
+                android:text="@string/sex"
+                android:textSize="@dimen/font_32px" >
+            </TextView>
+
+            <View
+                android:layout_width="@dimen/px30"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/sexValue"
+                style="@style/common_edit_view_align_right"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/px30"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:singleLine="true"
+                android:text="男"
+                android:textColor="@color/common_edit_hint_text" >
+            </TextView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/px30"
+            android:background="@color/common_line" />
+
+        <LinearLayout
+            android:id="@+id/birthday"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px100"
+            android:paddingLeft="@dimen/px30" >
+
+            <TextView
+                android:id="@+id/birthdayDes"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:ems="4"
+                android:gravity="center_vertical|left"
+                android:text="@string/birthday"
+                android:textSize="@dimen/font_32px" >
+            </TextView>
+
+            <View
+                android:layout_width="@dimen/px30"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/birthdayValue"
+                style="@style/common_edit_view_align_right"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/px30"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:singleLine="true"
+                android:text="2015-08-24"
+                android:textColor="@color/common_edit_hint_text" >
+            </TextView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/px30"
+            android:background="@color/common_line" />
+
+        <LinearLayout
+            android:id="@+id/salary"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px100"
+            android:paddingLeft="@dimen/px30" >
+
+            <CheckedTextView
+                android:id="@+id/ct_nor"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:checked="true"
+                android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"
+                android:drawableStart="?android:attr/listChoiceIndicatorMultiple"
+                android:gravity="center"
+                android:text="@string/user_nor" />
+
+            <View
+                android:layout_width="@dimen/px30"
+                android:layout_height="match_parent" />
+
+            <CheckedTextView
+                android:id="@+id/ct_student"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"
+                android:drawableStart="?android:attr/listChoiceIndicatorMultiple"
+                android:gravity="center"
+                android:text="@string/user_student" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/common_line" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/regist_next_step"
+        style="@style/common_red_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80"
+        android:layout_marginBottom="@dimen/px20"
+        android:layout_marginLeft="@dimen/px30"
+        android:layout_marginRight="@dimen/px30"
+        android:layout_marginTop="@dimen/px20"
+        android:text="@string/finish" >
+    </TextView>
+
+    <View
+        android:id="@+id/bottom_space"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+    </View>
+
+</LinearLayout>

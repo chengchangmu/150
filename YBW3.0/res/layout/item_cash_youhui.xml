@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/px20"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_item_cash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ssssss"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/px20"
+        android:layout_marginBottom="@dimen/px20"
+        android:textColor="@color/white_font" />
+
+</RelativeLayout>
